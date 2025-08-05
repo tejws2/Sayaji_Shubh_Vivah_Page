@@ -210,6 +210,13 @@ html, body {
   color: #3b2f2b;
   background: #fff;
 }
+.container {
+  width: 100%;
+  max-width: 1440px; /* Or 1280px or 1200px depending on your layout target */
+  margin: 0 auto;
+  padding: 0 20px; /* Optional: Add some side padding for smaller screens */
+  box-sizing: border-box;
+}
 
 .legacy-container {
   display: flex;
