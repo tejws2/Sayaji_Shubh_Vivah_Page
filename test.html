@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="legacy-contact-section">
+  <div class="legacy-container">
+    <!-- Left Content -->
+    <div class="legacy-form">
+      <img src="assets/experience.svg" alt="Logo" class="legacy-logo" />
+      <p class="legacy-subtext">
+        Share your details, and our wedding expert will connect with you shortly.
+      </p>
+      <form>
+        <input type="text" placeholder="Name" class="legacy-input" />
+        <input type="email" placeholder="Email" class="legacy-input" />
+        <input type="tel" placeholder="Phone Number" class="legacy-input" />
+        <label class="legacy-checkbox-wrapper">
+          <input type="checkbox" />
+          I accept the <a href="#">Terms & Conditions</a>.
+        </label>
+        <button type="submit" class="legacy-button">
+          <img src="assets/Phone.svg" alt="Phone" />
+          Get In Touch
+        </button>
+      </form>
+    </div>
+
+    <!-- Right Image -->
+    <div class="legacy-image-wrapper">
+  <img src="assets/4.svg" alt="Wedding" class="legacy-image" />
+  
+  <!-- Overlapping stats bar goes inside -->
+  <div class="legacy-stats-bar">
+    <div class="stat-block"><strong>22</strong><span>Cities</span></div>
+    <div class="stat-block"><strong>30</strong><span>Hotel</span></div>
+    <div class="stat-block"><strong>124+</strong><span>Banquets</span></div>
+    <div class="stat-block"><strong>5000+</strong><span>Events Planned</span></div>
+    <div class="stat-block"><strong>2012</strong><span>Keys</span></div>
+  </div>
+</div>
+
+</section>
+<style>
+  .legacy-contact-section {
+  position: relative;
+  background-color: #fff;
+  padding: 80px 100px 240px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.legacy-wrapper {
+  position: relative;
+  z-index: 1;
+}
+.legacy-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.legacy-form {
+  flex: 1 1 400px;
+  max-width: 500px;
+}
+
+.legacy-logo {
+  width: 397px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.legacy-subtext {
+  font-size: 24px;
+  margin-bottom: 20px;
+  line-height: 1;
+}
+
+.legacy-input {
+  display: block;
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+}
+
+.legacy-checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin: 12px 0;
+}
+
+.legacy-checkbox-wrapper input {
+  margin-right: 8px;
+}
+
+.legacy-button {
+  background-color: #d9b25f;
+  color: #000;
+  border: none;
+  padding: 8px 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.legacy-image-wrapper {
+  flex: 1 1 500px;
+  text-align: right;
+  position: relative; /* KEY: Make this relative so the stats bar can sit on it */
+}
+.legacy-image {
+  width: 100%;
+  max-width: 596px;
+  height: auto;
+}
+.legacy-stats-bar {
+  position: absolute;
+  
+  margin-top:-180px;
+  left: 0;
+  width: 100%;
+  height: 160px; /* Slightly reduced */
+  background-color: #f5f3f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  border-radius: 10px;
+}
+
+.stat-block {
+  width: 248px;
+  text-align: center;
+}
+.legacy-form-image-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1240px;
+  margin: 0 auto;
+  gap: 40px;
+  padding: 100px 40px 160px; /* extra bottom padding for overlap space */
+  position: relative;
+  z-index: 1;
+}
+.stat-block strong {
+  font-size: 32px;
+  display: block;
+  font-weight: 600;
+  color: #000;
+}
+.stat-block span {
+  font-size: 18px;
+  color: #444;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .legacy-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .legacy-image-wrapper {
+    text-align: center;
+  }
+
+  .legacy-stats-bar {
+    position: static;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 20px;
+    gap: 20px;
+  }
+
+  .stat-block {
+    width: 45%;
+  }
+}
+
+</style>
+</body>
+</html>

@@ -88,10 +88,12 @@ html, body {
   min-width: clamp(130px, 18vw, 220px); /* reduced width */
   height: clamp(36px, 8vw, 60px); /* reduced height */
   justify-content: center;
- font-size: clamp(13px, 2vw, 23px); /* smaller font size */
+  font-size: clamp(13px, 2vw, 23px); /* smaller font size */
   font-family: "Source Sans Pro", sans-serif;
   background: #fff7e6;
+  border-radius: 18px; /* ✅ add this */
 }
+
 
 .start-planning img.call-icon {
     width: 18px;
@@ -145,11 +147,12 @@ html, body {
 .call-btn {
   position: relative;
   width: clamp(120px, 25vw, 240px);        /* Reduced max width */
-  height: clamp(40px, 10vw, 70px);         /* Reduced height */
+  height: clamp(40px, 10vw, 60px);         /* Reduced height */
   background: #AF9146;
   color: #fff;
   border: none;
   cursor: pointer;
+  border-radius: 18px; /* ✅ add this */
   margin-top: clamp(16px, 4vw, 40px);      /* Reduced spacing */
   z-index: 1;
   display: flex;
@@ -349,12 +352,13 @@ html, body {
 .legacy-button {
   position: relative;
   width: clamp(120px, 25vw, 240px);        /* Reduced max width */
-  height: clamp(40px, 10vw, 70px);         /* Reduced height */
+  height: clamp(40px, 10vw, 60px);         /* Reduced height */
   background: #AF9146;
+  border-radius: 18px; /* ✅ add this */
   color: #fff;
   border: none;
   cursor: pointer;
-  margin-top: clamp(16px, 4vw, 40px);      /* Reduced spacing */
+  margin-top: -0px;      /* Reduced spacing */
   z-index: 1;
   display: flex;
   align-items: center;
@@ -363,6 +367,7 @@ html, body {
   gap: 14px;
   font-size: clamp(16px, 3vw, 28px);       /* Reduced font size */
   font-weight: normal;
+  margin-top: -0px;
 }
 
 .legacy-button .button-bg {
